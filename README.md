@@ -1,2 +1,6 @@
 # RSI_and_Stochastic_Indicator
-<img width="541" height="972" alt="Снимок экрана 2025-08-23 215726" src="https://github.com/user-attachments/assets/177b415d-5bfd-41c0-abad-1168148b9dd2" />
+
+This indicator is a combination of Stochastic and RSI lines. For the convenience of information perception, the %K line has been removed.  
+Also, the marks on the RSI line in green and red colors allow you to more accurately recognize the point for opening a position.
+
+<img width="1795" height="409" alt="image" src="https://github.com/user-attachments/assets/711e1f4d-6bc5-4983-a65a-a2c3be1e118f" />
