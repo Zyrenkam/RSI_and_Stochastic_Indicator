@@ -13,13 +13,14 @@ osc = ta.rsi(src, len)
 plot(osc, title="RSI", linewidth=2, color=color.rgb(141, 24, 150))
 
 
-_ev = ta.cross(source1 = osc, source2 = 50) 
+_evunder = ta.crossunder(source1 = osc, source2 = 50) 
+_evuover = ta.crossover(source1 = osc, source2 = 50) 
 //RSI CIRCLE
 
-if _ev
-    label.new(bar_index, osc, yloc=yloc.price, color=color.rgb(141, 24, 150), style=label.style_circle, size=3)
-    
-    //plotshape(bar_index, title="Circle", style=shape.circle, location=location.absolute, color=color.rgb(141, 24, 150), size = size.tiny)
+if _evunder
+    label.new(bar_index, osc, yloc=yloc.price, color=color.rgb(255, 0, 0), style=label.style_circle, size=2)
+if _evuover
+    label.new(bar_index, osc, yloc=yloc.price, color=color.rgb(60, 255, 0), style=label.style_circle, size=2)
 
 //RSI LINES
 //hline(50, title="Middle Line", color=#787B86, linestyle=hline.style_dotted)
